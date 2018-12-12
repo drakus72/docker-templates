@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>jellyfin</Name>
   <Repository>jellyfin/jellyfin</Repository>
-  <Registry>https://hub.docker.com/r/jellyfin/jellyfin/~/dockerfile/</Registry>
+  <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
