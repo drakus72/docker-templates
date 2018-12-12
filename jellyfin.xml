@@ -12,7 +12,7 @@
   </Overview>
   <Support>https://www.reddit.com/r/jellyfin/</Support>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
-  <GitHub>https://github.com/jellyfin/jellyfin/>
+  <GitHub>https://github.com/jellyfin/jellyfin/></GitHub>
   <Repository>jellyfin/jellyfin</Repository>
   <Project>https://jellyfin.media/</Project>
   <BindTime>true</BindTime>
