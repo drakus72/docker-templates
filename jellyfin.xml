@@ -1,28 +1,24 @@
-<?xml version="1.0"?>
-<Container version="2">
-  <Name>jellyfin</Name>
-  <Repository>jellyfin/jellyfin</Repository>
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/jellyfin/jellyfin/master/jellyfin.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Name>JellyFin Media Server</Name>
+  <Description>
+	JellyFin is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container
+  </Description>
+  <Overview>
+    Jellyfin Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono and will remain completely free!
+  </Overview>
+  <Support>https://www.reddit.com/r/jellyfin/</Support>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
+  <GitHub>https://github.com/jellyfin/jellyfin/>
+  <Repository>jellyfin/jellyfin</Repository>
+  <Project>https://jellyfin.media/</Project>
+  <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/jellyfin/jellyfin/</Support>
-  <Project/>
-  <Overview>The Free Software Media Browser    Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
-  <Category/>
-  <WebUI>http://192.168.0.50:8096/web/index.html#!/dashboard.html</WebUI>
-  <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Description>The Free Software Media Browser    Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
-  <Networking>
-    <Mode>host</Mode>
+    <Networking>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8096</HostPort>
@@ -30,32 +26,20 @@
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
-  </Networking>
+    </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/jellyfin/config/</HostDir>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-
   </Data>
-  <Environment>
-    <Variable>
-      <Value>1000</Value>
-      <Name>1000</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>1000</Value>
-      <Name>1000</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Labels/>
-  <WebUI>http://[IP]:[PORT:8096]</WebUI>
-</Container>
+  <WebUI>http://[IP]:[PORT:8096]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/emby-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
