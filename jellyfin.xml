@@ -3,7 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/jellyfin/jellyfin/master/jellyfin.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>JellyFin Media Server</Name>
+  <Name>JellyFin</Name>
   <Description>
 JellyFin is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!![br][br]
   You can add as many mount points as needed for recordings, movies ,etc. [br][br]
