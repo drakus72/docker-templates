@@ -46,6 +46,6 @@ JellyFin is The Free Software Media Browser	Converted By Community Applications	
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/emby-icon.png</Icon>
+  <Icon>https://github.com/drakus72/docker-templates/blob/master/jellyfin.png</Icon>
   <ExtraParams></ExtraParams>
 </Containers>
